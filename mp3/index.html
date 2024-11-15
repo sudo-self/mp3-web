@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP3 Playlist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      text-align: center;
+    }
+    .audio-player {
+      margin: 20px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      cursor: pointer;
+      color: #00d8ff;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <h1>MP3 Web</h1>
+  <div class="audio-player">
+    <audio id="main-audio-player" controls>
+      <source src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <ul id="playlist">
+    <li data-src="Azizi Gibson - Enemies (Prod. KAMANDI) [vUkMSXteHNY].mp3">Azizi Gibson - Enemies (Prod. KAMANDI) [vUkMSXteHNY].mp3</li>
+    <li data-src="Citizen Cope Sideways [ezz-nazThiM].mp3">Citizen Cope Sideways [ezz-nazThiM].mp3</li>
+    <li data-src="Croosh - Woah [I6jBWame_ic].mp3">Croosh - Woah [I6jBWame_ic].mp3</li>
+    <li data-src="FERG - New Level (Official Video) ft. Future [Srns7NiO278].mp3">FERG - New Level (Official Video) ft. Future [Srns7NiO278].mp3</li>
+    <li data-src="G-Eazy - Opportunity Cost [Mko1OVHwzoU].mp3">G-Eazy - Opportunity Cost [Mko1OVHwzoU].mp3</li>
+    <li data-src="I was running through the six with my woes - drake [jqScSp5l-AQ].mp3">I was running through the six with my woes - drake [jqScSp5l-AQ].mp3</li>
+    <li data-src="K.A.A.N - Feels [d6eNOnaF0mw].mp3">K.A.A.N - Feels [d6eNOnaF0mw].mp3</li>
+    <li data-src="K.A.A.N - Mary Jane [jxipIRg-f2Y].mp3">K.A.A.N - Mary Jane [jxipIRg-f2Y].mp3</li>
+    <li data-src="K.A.A.N - Phoenix (Prod. ORBT) [XYzctZmtm2Q].mp3">K.A.A.N - Phoenix (Prod. ORBT) [XYzctZmtm2Q].mp3</li>
+    <li data-src="K.A.A.N. - Loyalty (Prod. Nezman) [N-85_Y9RzBk].mp3">K.A.A.N. - Loyalty (Prod. Nezman) [N-85_Y9RzBk].mp3</li>
+    <li data-src="Kendrick Lamar - Money Trees ft. Jay Rock (Music Video) [hwR_1EP18eo].mp3">Kendrick Lamar - Money Trees ft. Jay Rock (Music Video) [hwR_1EP18eo].mp3</li>
+    <li data-src="Kevin Gates - Really Really [Official Music Video] [pR0VsbyZxWg].mp3">Kevin Gates - Really Really [Official Music Video] [pR0VsbyZxWg].mp3</li>
+    <li data-src="Lane 8 - Midnight [m-xqBm2ANoU].mp3">Lane 8 - Midnight [m-xqBm2ANoU].mp3</li>
+    <li data-src="Lane 8 - Undercover feat. Matthew Dear [HSydHbGdIcY].mp3">Lane 8 - Undercover feat. Matthew Dear [HSydHbGdIcY].mp3</li>
+    <li data-src="Lane 8 Summer 2017 Mixtape  - Part 1 [aU-vLhV-4us].mp3">Lane 8 Summer 2017 Mixtape  - Part 1 [aU-vLhV-4us].mp3</li>
+    <li data-src="Logic - Everybody (Official Audio) [sUpu7618KrM].mp3">Logic - Everybody (Official Audio) [sUpu7618KrM].mp3</li>
+    <li data-src="Lykke Li - I Follow Rivers (FlicFlac Remix) [MxkPrZOhg-I].mp3">Lykke Li - I Follow Rivers (FlicFlac Remix) [MxkPrZOhg-I].mp3</li>
+    <li data-src="Lyric video for broccoli [Sbf3VQ-2dnQ].mp3">Lyric video for broccoli [Sbf3VQ-2dnQ].mp3</li>
+    <li data-src="Migos - Bad and Boujee (R3HAB x No Riddim x it's different Remix) [LKGbKyMJX5U].mp3">Migos - Bad and Boujee (R3HAB x No Riddim x it's different Remix) [LKGbKyMJX5U].mp3</li>
+    <li data-src="ODESZA - IPlayYouListen [nlF74VhoQKY].mp3">ODESZA - IPlayYouListen [nlF74VhoQKY].mp3</li>
+    <li data-src="Quantic - Time Is The Enemy [nvUeo5sagkA].mp3">Quantic - Time Is The Enemy [nvUeo5sagkA].mp3</li>
+    <li data-src="Radio Citizen - The Hop [4dN1MYU7DVQ].mp3">Radio Citizen - The Hop [4dN1MYU7DVQ].mp3</li>
+    <li data-src="Russ - The Otherside [WxmXFHjebHo].mp3">Russ - The Otherside [WxmXFHjebHo].mp3</li>
+    <li data-src="Russ - Too Many (Official Video) [VbRZMZisILw].mp3">Russ - Too Many (Official Video) [VbRZMZisILw].mp3</li>
+    <li data-src="Russ - What They Want (Official Video) [oorK4RPgZ8Q].mp3">Russ - What They Want (Official Video) [oorK4RPgZ8Q].mp3</li>
+    <li data-src="ScHoolboy Q - THere He Go (Official Video) [KnnYiW5dnhQ].mp3">ScHoolboy Q - THere He Go (Official Video) [KnnYiW5dnhQ].mp3</li>
+    <li data-src="Sevyn Streeter - It Won't Stop ft. Chris Brown [Official Video] [XgFiWGIVP6s].mp3">Sevyn Streeter - It Won't Stop ft. Chris Brown [Official Video] [XgFiWGIVP6s].mp3</li>
+    <li data-src="Sonnentanz (Sun Don`t Shine) (feat.Will Heard) Original Mix [JWXjBcQQxSw].mp3">Sonnentanz (Sun Don`t Shine) (feat.Will Heard) Original Mix [JWXjBcQQxSw].mp3</li>
+    <li data-src="Vallis Alps - Young [yoZPVMEsbeQ].mp3">Vallis Alps - Young [yoZPVMEsbeQ].mp3</li>
+    <li data-src="Vanic x K.Flay - Can't Sleep [ZAcDOuPxMyQ].mp3">Vanic x K.Flay - Can't Sleep [ZAcDOuPxMyQ].mp3</li>
+    <li data-src="Visioneers- Ike's Mood I [U94eCOPY390].mp3">Visioneers- Ike's Mood I [U94eCOPY390].mp3</li>
+    <li data-src="Whethan - Savage (feat. Flux Pavilion & MAX) [IT_c3fFW3VM].mp3">Whethan - Savage (feat. Flux Pavilion & MAX) [IT_c3fFW3VM].mp3</li>
+    <li data-src="Wiz Khalifa - King of Everything [Official Video] [8d0cm_hcQes].mp3">Wiz Khalifa - King of Everything [Official Video] [8d0cm_hcQes].mp3</li>
+    <li data-src="Young M.A ＂OOOUUU＂ (Official Video) [gVf_4Ns3qLU].mp3">Young M.A ＂OOOUUU＂ (Official Video) [gVf_4Ns3qLU].mp3</li>
+    <li data-src="n u a g e s - Dreams ❀ [9RMHHwJ9Eqk].mp3">n u a g e s - Dreams ❀ [9RMHHwJ9Eqk].mp3</li>
+    <li data-src="n u a g e s - Shadows ｜ New channel @deepchill [OXEOHHWH0CM].mp3">n u a g e s - Shadows ｜ New channel @deepchill [OXEOHHWH0CM].mp3</li>
+  </ul>
+  <script>
+    // Get the audio player and playlist
+    const audioPlayer = document.getElementById('main-audio-player');
+    const playlist = document.getElementById('playlist');
+
+    // Add click event listeners to all playlist items
+    playlist.addEventListener('click', function(event) {
+      if (event.target && event.target.tagName === 'LI') {
+        const songSrc = event.target.getAttribute('data-src');
+        audioPlayer.querySelector('source').src = songSrc;
+        audioPlayer.load(); // Reload the audio player with the new source
+        audioPlayer.play(); // Play the selected song
+      }
+    });
+  </script>
+  <footer>
+  <a href="#" style="color: #00d8ff; text-decoration: none;">@sudo-self</a>
+  </footer>
+</body>
+</html>
